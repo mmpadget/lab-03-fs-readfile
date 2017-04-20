@@ -13,6 +13,8 @@ describe('fs module', function() {
         done();
       });
     });
+    // it should read three files and log the first 8 bytes in hex.
+
     // it('should write a new file to the data dir', done => {
     //     done();
     //   });
