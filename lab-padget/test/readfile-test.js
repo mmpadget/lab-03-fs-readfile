@@ -7,6 +7,17 @@ console.log('evaluating readfile.js');
 const expect = require('chai').expect;
 const Buffer = require('buffer').Buffer;
 const fs = require('fs');
+// require readFile in test.
+
+let mock = [ '5475726e69702067', '476f646172642061', '596f752068617665' ];
+console.log(mock);
+// compare this array to out array.
+
+// Follow similar format:
+// exports.readThreeFiles(function(err, myArray){
+//   if (err) throw err;
+//   console.log('are we here?', myArray);
+// });
 
 // const assert = require('assert');
 // const readFile = require('../lib/readfile.js');
@@ -20,6 +31,11 @@ describe('fs module', function() {
     // });
 
     it('should return a string with text data from file one', done => {
+      // exports.readThreeFiles(function(err, myArray){
+      //   if (err) throw err;
+      //   console.log('are we here?', myArray);
+      // expect.....
+      // });
       fs.readFile(`${__dirname}/../data/one.txt`, function(err, data) {
         // assert.equal(typeof newPlant.depth, 'string');
 
