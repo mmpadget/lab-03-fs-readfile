@@ -2,7 +2,7 @@
   "name": "lab-padget",
   "version": "1.0.0",
   "description": "Lab 3",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
